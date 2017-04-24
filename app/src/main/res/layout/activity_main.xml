@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bigshop.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bigshop"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The biggest LEGO shop in Bahama. All the parts You need in one place. Just for You, Big Shop!"
+        android:textColor="@android:color/white"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:background="#303F9F"
+        android:paddingLeft="8sp"
+        android:paddingRight="8sp"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#3F51B5"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/Contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Contact information:"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/address"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/map_icon"
+            android:layout_below="@id/Contact" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/address"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/phone_icon"/>
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/phone"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/mail_icon"/>
+
+        <ImageView
+            android:id="@+id/www"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/email"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/www_icon"/>
+
+        <ImageView
+            android:id="@+id/open"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/www"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/clock_icon"/>
+
+        <TextView
+            android:id="@+id/AddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:text="Happy Street 123, 012-34 Baloon"
+            android:layout_below="@id/Contact"
+            android:layout_toRightOf="@id/address"
+            android:layout_alignBottom="@id/address"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/PhoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_below="@id/AddressText"
+            android:layout_toRightOf="@id/phone"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:text="+23 45 678 90 12"
+            android:layout_alignBottom="@id/phone"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_below="@id/PhoneText"
+            android:layout_toRightOf="@id/email"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:text="czarek@bigshop.com"
+            android:layout_alignBottom="@id/email"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/wwwText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_below="@id/emailText"
+            android:layout_toRightOf="@id/www"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:text="www.bigshop.com"
+            android:layout_alignBottom="@id/www"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/openText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_below="@id/wwwText"
+            android:layout_toRightOf="@id/open"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:text="Open Mon - Fri 09:00 AM - 05:00 PM"
+            android:layout_toEndOf="@id/open"
+            android:layout_alignBottom="@id/open"
+            android:gravity="bottom" />
+
+    </RelativeLayout>
+</LinearLayout>
